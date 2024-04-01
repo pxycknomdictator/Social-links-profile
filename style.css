@@ -1,0 +1,149 @@
+@font-face {
+    font-family: inter;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/* Css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter, sans-serif;
+}
+
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Utilities Classes */
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.center {
+    text-align: center;
+}
+
+.block {
+    display: inline-block;
+}
+
+.responsive-img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.hover {
+    cursor: pointer;
+}
+
+.weight {
+    font-weight: 700;
+}
+
+.light {
+    font-weight: 500;
+}
+
+/* variables */
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+/*-Main Css */
+
+html {
+    font-size: 16px;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background: var(--OffBlack);
+    overflow: hidden;
+    place-items: center;
+}
+
+.card-container{
+    background: var(--DarkGrey);
+    padding: 2.5rem;
+    border-radius: 16px;
+}
+
+img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+h1, p{
+    color: var(--White);
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+p{
+    margin-block: 2rem;
+}
+
+h3{
+    color: var(--Green);
+    margin: 1rem 0rem 2rem 0;
+}
+
+.profiles-container{
+    gap: 1rem;
+}
+
+.profiles{
+    background: var(--Grey);
+    color: var(--White);
+    border-radius: 7px;
+    font-weight: 600;
+    padding-block: .8rem;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        color: var(--OffBlack);
+        background: var(--Green);
+    }
+}
